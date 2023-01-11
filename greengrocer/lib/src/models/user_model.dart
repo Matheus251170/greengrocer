@@ -8,7 +8,7 @@ class UserModel {
   String? email;
   String? phone;
   String? cpf;
-  String? passwod;
+  String? password;
   String? id;
   String? token;
 
@@ -17,7 +17,7 @@ class UserModel {
     this.email,
     this.phone,
     this.cpf,
-    this.passwod,
+    this.password,
     this.id,
     this.token,
   });

@@ -15,7 +15,7 @@ class SignUpScreen extends StatelessWidget {
       mask: '###.###.###-##', filter: {'#': RegExp(r'[0-9]')});
 
   final phoneFormatter = MaskTextInputFormatter(
-      mask: '(##) # ####-####', filter: {'#': RegExp(r'[0-9]')});
+      mask: '(##) #####-####', filter: {'#': RegExp(r'[0-9]')});
 
   final _formKey = GlobalKey<FormState>();
 
@@ -74,7 +74,7 @@ class SignUpScreen extends StatelessWidget {
                             icon: Icons.lock,
                             label: 'Senha',
                             onSaved: (value) {
-                              authController.user.passwod = value;
+                              authController.user.password = value;
                             },
                             isPass: true,
                             validator: passwordValidator,
